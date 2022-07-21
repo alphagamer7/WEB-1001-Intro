@@ -1,0 +1,20 @@
+@page
+@model IntroWebApp.Pages.Intro
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Intro";
+}
+
+<h3>Athif Ahamed Mohamed Shaffy - A00256229</h3>
+<form oninput="output.value=parseInt(numberInput1.value)+parseInt(numberInput2.value)">
+    <input type="number" name="numberInput1">
+    +<input type="number" name="numberInput2">
+    =<output name="output" for="numberInput1 numberInput2"></output>
+    <input type="submit" value="Submit">
+</form>
+
+@section NewSection {
+     <p>
+       New section test
+    </p>
+}
